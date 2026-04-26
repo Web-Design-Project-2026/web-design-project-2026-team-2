@@ -1,0 +1,54 @@
+/* Design System - variables */
+
+:root{
+/* colours */
+    --background-colour: #0A0A0A;
+    --main-text-colour: #FEFFFF; 
+
+    --primary-default-colour: #FE0809; 
+    --primary-hover-colour: #D00001; 
+    --primary-clicked-colour:#FEFFFF; 
+    --unavailable-colour: #A2A2A2; 
+
+    --secondary-default-colour: #D1FF2C; 
+    --secondary-hover-colour: #ADDE00; 
+    --secondary-clicked-colour:#FEFFFF; 
+    
+    --error-default-colour: #790000; 
+    --error-hover-colour: #CA5050; 
+    --error-clicked-colour: #FFA9A9; 
+
+/* grid system*/
+ /* px to vw conversion for a total of 1224px viewport width */
+    --column-width-desktop: 6.535vw; 
+    --column-gap-desktop: 1.96vw; 
+
+    /* px to vw conversion for a total of 320px viewport width */
+    --column-width-mobile: 10vw; 
+    --column-gap-mobile: 5vw; 
+
+/* typography */
+    --heading-1-font-size: 3.75rem; 
+    --heading-1-line-height: 4.5rem; 
+    --heading-1-text-transform: uppercase; 
+
+    --heading-2-font-size: 3rem; 
+    --heading-2-line-height: 4rem; 
+
+    --heading-3-font-size: 2.5rem; 
+    --heading-3-line-height: 3rem; 
+
+    --subtitle-1-font-size: 1.75rem; 
+    --subtitle-1-line-height: 2.5rem; 
+
+    --subtitle-2-font-size: 1.125rem; 
+    --subtitle-2-line-height: 1.75rem; 
+    --subtitle-2-text-transform: uppercase; 
+
+    --body-1-font-size: 1.125rem; 
+    --body-1-line-height: 1.75rem; 
+
+    --body-2-font-size: 1rem;
+    --body-2-line-height: 1.5rem; 
+
+}
