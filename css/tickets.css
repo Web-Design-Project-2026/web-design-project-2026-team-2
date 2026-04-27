@@ -1,0 +1,14 @@
+@import url(main.css);
+
+.tickets-heading-3 {
+  color: var(--primary-default-colour);
+}
+
+.popular-subtitle-2 {
+  color: var(--primary-default-colour);
+}
+
+section {
+    color: var(--main-text-colour);
+}
+
