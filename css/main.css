@@ -1,0 +1,129 @@
+/* Design System - variables */
+
+:root {
+  /* colours */
+  --background-colour: #0a0a0a;
+  --main-text-colour: #feffff;
+
+  --primary-default-colour: #fe0809;
+  --primary-hover-colour: #d00001;
+  --primary-clicked-colour: #feffff;
+  --unavailable-colour: #a2a2a2;
+
+  --secondary-default-colour: #d1ff2c;
+  --secondary-hover-colour: #adde00;
+  --secondary-clicked-colour: #feffff;
+
+  --error-default-colour: #790000;
+  --error-hover-colour: #ca5050;
+  --error-clicked-colour: #ffa9a9;
+
+  /* grid system*/
+  /* px to vw conversion for a total of 1224px viewport width */
+  --column-width-desktop: 6.535vw;
+  --column-gap-desktop: 1.96vw;
+
+  /* px to vw conversion for a total of 320px viewport width */
+  --column-width-mobile: 10vw;
+  --column-gap-mobile: 5vw;
+
+  /* typography */
+  --heading-1-font-size: 3.75rem;
+  --heading-1-line-height: 4.5rem;
+  --heading-1-text-transform: uppercase;
+
+  --heading-2-font-size: 3rem;
+  --heading-2-line-height: 4rem;
+
+  --heading-3-font-size: 2.5rem;
+  --heading-3-line-height: 3rem;
+
+  --subtitle-1-font-size: 1.75rem;
+  --subtitle-1-line-height: 2.5rem;
+
+  --subtitle-2-font-size: 1.125rem;
+  --subtitle-2-line-height: 1.75rem;
+  --subtitle-2-text-transform: uppercase;
+
+  --body-1-font-size: 1.125rem;
+  --body-1-line-height: 1.75rem;
+
+  --body-2-font-size: 1rem;
+  --body-2-line-height: 1.5rem;
+}
+
+/* text styles */
+
+h1 {
+  font-family: "Gabarito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--heading-1-font-size);
+  line-height: var(--heading-1-line-height);
+  text-transform: var(--heading-1-text-transform);
+}
+
+h2 {
+  font-family: "Gabarito", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: var(--heading-2-font-size);
+  line-height: var(--heading-2-line-height);
+}
+
+h3 {
+  font-family: "Gabarito", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--heading-3-font-size);
+  line-height: var(--heading-3-line-height);
+}
+
+h4 {
+  font-family: "Gabarito", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.025rem;
+  font-size: var(--subtitle-1-font-size);
+  line-height: var(--subtitle-1-line-height);
+}
+
+h5 {
+  font-family: "Gabarito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--subtitle-2-font-size);
+  line-height: var(--subtitle-2-line-height);
+  text-transform: var(--subtitle-2-text-transform);
+}
+
+p, nav a {
+  font-family: "Gabarito", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
+  color: var(--main-text-colour);
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-text-colour);
+} 
+
+.footer-info p {
+    font-size: var(--body-2-font-size);
+    line-height: var(--body-2-line-height);
+}
+
+.footer-info h4 {
+    font-size: var(--body-1-font-size);
+    line-height: var(--body-1-line-height);
+    color: var(--main-text-colour);
+}
+
+/* page style */
+
+* {
+    background-color: var(--background-colour);
+}
