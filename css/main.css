@@ -111,6 +111,17 @@ a {
     color: var(--main-text-colour);
 } 
 
+.footer-info p {
+    font-size: var(--body-2-font-size);
+    line-height: var(--body-2-line-height);
+}
+
+.footer-info h4 {
+    font-size: var(--body-1-font-size);
+    line-height: var(--body-1-line-height);
+    color: var(--main-text-colour);
+}
+
 /* page style */
 
 * {
