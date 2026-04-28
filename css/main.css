@@ -124,6 +124,15 @@ a {
   color: var(--main-text-colour);
 }
 
+button {
+  font-family: "Gabarito", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.025rem;
+  font-size: var(--subtitle-1-font-size);
+  line-height: var(--subtitle-1-line-height);
+}
+
 .footer-info p {
   font-size: var(--body-2-font-size);
   line-height: var(--body-2-line-height);
