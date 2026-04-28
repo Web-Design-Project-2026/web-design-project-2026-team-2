@@ -1,0 +1,97 @@
+@import url(main.css);
+
+.tickets-heading-3 {
+  color: var(--primary-default-colour);
+  text-align: center;
+}
+
+#popular-subtitle-2 {
+  color: var(--primary-default-colour);
+}
+
+.ticket-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 4.5rem;
+  margin: 5% 10% 5% 10%;
+}
+
+section {
+  color: var(--main-text-colour);
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+}
+
+section h4 {
+  margin-top: 1rem;
+}
+
+section p {
+  margin-top: 0.5rem;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.price {
+  text-align: start;
+  padding: 1rem;
+}
+
+.entry-flexbox {
+  display: flex;
+  padding: 5%;
+  border: 5px solid var(--error-default-colour);
+  border-radius: 20px 20px 20px 20px;
+  background: var(--background-colour);
+  height: 60vh ; 27.813rem
+}
+
+.plus-flexbox {
+  display: flex;
+  padding: 5%;
+  border: 5px solid var(--error-default-colour);
+  border-radius: 20px 20px 20px 20px;
+  background: var(--background-colour);
+  height: 60vh;
+}
+
+.experience-flexbox {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+  border: 5px solid var(--primary-default-colour);
+  border-radius: 20px 20px 20px 20px;
+  background: var(--background-colour);
+  transform: translateY(-8vh);
+}
+
+.ticket-description {
+  padding-left: 1.5rem;
+}
+
+.ticket-benefit-icons {
+  display: inline;
+  vertical-align: middle;
+  padding: 2%;
+  width: 1.75rem;
+  height: 1.75rem;
+  aspect-ratio: 1/1;
+}
+
+button {
+  color: var(--main-text-colour);
+  display: inline-flex;
+  width: 80%;
+  height: 3.5rem;
+  padding: 0.75rem 2rem ;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  background: var(--primary-default-colour);
+  border: 5px solid var(--primary-default-colour);
+  border-radius: 100px;
+  grid-column: 2/3;
+  transform: translateY(-6.5vh);
+}
