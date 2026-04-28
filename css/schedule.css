@@ -1,8 +1,5 @@
 @import url(main.css); 
 
-nav{
-    border-bottom: 1px solid rgba(254,8,9,0.28);
-}
 nav ul{
     display: flex;
     justify-content: center; 
@@ -36,7 +33,6 @@ nav ul{
     justify-self:start;
     text-align: left;
     max-width: 30rem;
-    padding-left: 2rem;
 }
 .event-text h2{
     color: var(--primary-default-colour); 
