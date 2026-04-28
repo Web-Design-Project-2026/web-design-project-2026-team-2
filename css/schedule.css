@@ -21,6 +21,7 @@ nav ul{
 
 #events-title h1{
     color: var(--primary-default-colour);
+    text-transform:none; 
 }
 .event-section{
     display: grid; 
