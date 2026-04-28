@@ -154,6 +154,7 @@ body{
   color: var(--main-text-colour);
 }
 
+
 nav ul{
     list-style: none;
     display: flex;
