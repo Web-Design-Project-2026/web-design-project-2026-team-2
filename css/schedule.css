@@ -47,7 +47,10 @@ nav ul{
     display:flex;
     justify-content: flex-end;
 }
-
+.reverse .event-text{
+    justify-self: end; 
+    text-align: right;
+}
 .reverse .event-image{
     order: -1; 
     justify-content: flex-start; 
