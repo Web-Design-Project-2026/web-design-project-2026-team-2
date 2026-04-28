@@ -52,3 +52,47 @@
     --body-2-line-height: 1.5rem; 
 
 }
+body{
+  margin:0; 
+  color: var(--main-text-colour);
+}
+
+nav{
+    border-bottom: 1px solid rgba(254,8,9,0.28);
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 3rem; 
+    padding: 1.25rem 1rem; 
+    margin: 0; 
+ }
+
+footer{
+    max-width: 1224px; 
+    margin: 0 auto; 
+    padding: 3.5rem 0 2rem; 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    gap:2rem; 
+}
+
+#footer-name{
+    max-width: 22rem;
+}
+
+.logo-footer{
+    width:10rem;
+    height:auto;
+    display:block; 
+    margin-bottom: 1rem;
+}
+
+.footer-info{
+    display:flex; 
+    gap:4rem; 
+}
