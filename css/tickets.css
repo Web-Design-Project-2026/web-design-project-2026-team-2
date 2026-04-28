@@ -5,14 +5,15 @@
   justify-self: center;
 }
 
-.popular-subtitle-2 {
+#popular-subtitle-2 {
   color: var(--primary-default-colour);
 }
 
 .ticket-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4.5rem;
+  margin: 5%;
 }
 
 section {
@@ -22,26 +23,60 @@ section {
   text-align: center;
 }
 
-section p {
-    margin: 0.5rem;
-    padding: 0.5rem;
-    text-align: left;
-    padding-left: 3.5rem;
+section h4 {
+  margin-top: 1rem;
 }
 
-.popular-subtitle-2 {
-    padding-bottom: 0.5rem;
+section p {
+  margin-top: 0.5rem;
+  text-align: left;
+  padding-left: 1rem;
 }
 
 .price {
-    text-align: start;
-    padding-left: 2rem;
+  text-align: start;
+  padding: 1rem;
 }
 
 .entry-flexbox {
-    margin-top: 9%;
+  display: flex;
+  padding: 5%;
+  margin-top: 9%;
+  border: 5px solid var(--error-default-colour);
+  border-radius: 20px 20px 20px 20px;
+  background: var(--background-colour);
+  height: 27.813rem;
 }
 
 .plus-flexbox {
-    margin-top: 9%;
+  display: flex;
+  padding: 5%;
+  margin-top: 9%;
+  border: 5px solid var(--error-default-colour);
+  border-radius: 20px 20px 20px 20px;
+  background: var(--background-colour);
+  height: 27.813rem;
+}
+
+.experience-flexbox {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+  border: 5px solid var(--primary-default-colour);
+  border-radius: 20px 20px 20px 20px;
+  background: var(--background-colour);
+  transform: translateY(-40px);
+}
+
+.ticket-description {
+  padding-left: 1.5rem;
+}
+
+.ticket-benefit-icons {
+  display: inline;
+  vertical-align: middle;
+  padding: 2%;
+  width: 1.75rem;
+  height: 1.75rem;
+  aspect-ratio: 1/1;
 }
