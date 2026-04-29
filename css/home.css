@@ -90,3 +90,13 @@
   border-radius: 100px;
   padding: 14px 16px;
 }
+
+#sponsors {
+  display: flex;
+  margin: 42px 100px;
+  justify-content: space-between;
+}
+
+#sponsors img {
+  height: 71px;
+}
