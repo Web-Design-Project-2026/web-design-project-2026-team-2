@@ -129,8 +129,8 @@ button {
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.025rem;
-  font-size: var(--subtitle-1-font-size);
-  line-height: var(--subtitle-1-line-height);
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
 }
 
 .footer-info p {
@@ -148,4 +148,46 @@ button {
 
 * {
   background-color: var(--background-colour);
+}
+body{
+  margin:0; 
+  color: var(--main-text-colour);
+}
+
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 3rem; 
+    padding: 1.25rem 1rem; 
+    margin: 0; 
+ }
+
+footer{
+    max-width: 1224px; 
+    margin: 0 auto; 
+    border-top: 1px solid var(--main-text-colour);
+    padding: 3.5rem 0 2rem; 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    gap:2rem; 
+}
+
+#footer-name{
+    max-width: 22rem;
+}
+
+.logo-footer{
+    width:10rem;
+    height:auto;
+    display:block; 
+    margin-bottom: 1rem;
+}
+
+.footer-info{
+    display:flex; 
+    gap:4rem; 
 }

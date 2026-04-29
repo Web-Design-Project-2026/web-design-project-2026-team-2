@@ -1,8 +1,5 @@
 @import url(main.css); 
 
-nav{
-    border-bottom: 1px solid rgba(254,8,9,0.28);
-}
 nav ul{
     display: flex;
     justify-content: center; 
@@ -24,6 +21,7 @@ nav ul{
 
 #events-title h1{
     color: var(--primary-default-colour);
+    text-transform:none; 
 }
 .event-section{
     display: grid; 
@@ -36,7 +34,6 @@ nav ul{
     justify-self:start;
     text-align: left;
     max-width: 30rem;
-    padding-left: 2rem;
 }
 .event-text h2{
     color: var(--primary-default-colour); 
@@ -51,7 +48,10 @@ nav ul{
     display:flex;
     justify-content: flex-end;
 }
-
+.reverse .event-text{
+    justify-self: end; 
+    text-align: right;
+}
 .reverse .event-image{
     order: -1; 
     justify-content: flex-start; 
@@ -64,30 +64,4 @@ nav ul{
     border-radius: 10px; 
     object-fit: cover;
     display: block; 
-}
-
-footer{
-    max-width: 1224px; 
-    margin: 0 auto; 
-    padding: 3.5rem 0 2rem; 
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; 
-    gap:2rem; 
-}
-
-#footer-name{
-    max-width: 22rem;
-}
-
-.logo-footer{
-    width:10rem;
-    height:auto;
-    display:block; 
-    margin-bottom: 1rem;
-}
-
-.footer-info{
-    display:flex; 
-    gap:4rem; 
 }

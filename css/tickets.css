@@ -12,9 +12,8 @@
 .ticket-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
   column-gap: 4.5rem;
-  margin: 5% 10% 5% 10%;
+  margin: 5% 10% 0% 10%;
 }
 
 section {
@@ -41,15 +40,17 @@ section p {
 
 .entry-flexbox {
   display: flex;
+  margin: 5%;
   padding: 5%;
   border: 5px solid var(--error-default-colour);
   border-radius: 20px 20px 20px 20px;
   background: var(--background-colour);
-  height: 60vh ; 27.813rem
+  height: 60vh;
 }
 
 .plus-flexbox {
   display: flex;
+  margin: 5%;
   padding: 5%;
   border: 5px solid var(--error-default-colour);
   border-radius: 20px 20px 20px 20px;
@@ -60,11 +61,12 @@ section p {
 .experience-flexbox {
   display: flex;
   justify-content: center;
+  margin: 5%;
   padding: 5%;
   border: 5px solid var(--primary-default-colour);
   border-radius: 20px 20px 20px 20px;
   background: var(--background-colour);
-  transform: translateY(-8vh);
+  transform: translateY(-10vh);
 }
 
 .ticket-description {
@@ -83,9 +85,9 @@ section p {
 button {
   color: var(--main-text-colour);
   display: inline-flex;
-  width: 80%;
+  width: 60%;
   height: 3.5rem;
-  padding: 0.75rem 2rem ;
+  padding: 0.75rem 2rem;
   justify-content: center;
   justify-self: center;
   align-items: center;
@@ -93,5 +95,5 @@ button {
   border: 5px solid var(--primary-default-colour);
   border-radius: 100px;
   grid-column: 2/3;
-  transform: translateY(-6.5vh);
+  transform: translateY(-10vh);
 }
