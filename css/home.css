@@ -1,0 +1,48 @@
+#hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+#hero-section {
+  background: transparent;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#hero-content {
+  background-color: unset;
+  position: relative;
+  z-index: 2;
+  margin-left: 80px;
+  bottom: -160px;
+}
+
+.hero-button {
+  position: absolute;
+  bottom: 30px;
+  left: 48%;
+  z-index: 3;
+}
+
+.arrow {
+  width: 50px;
+}
+
+.logo-hero {
+  width: 600px;
+  height: 78px;
+  margin-left: -15px;
+}
+
+#hero-content h3 {
+  padding-top: 28px;
+}
