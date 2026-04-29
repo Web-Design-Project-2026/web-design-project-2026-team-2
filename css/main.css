@@ -129,8 +129,8 @@ button {
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.025rem;
-  font-size: var(--subtitle-1-font-size);
-  line-height: var(--subtitle-1-line-height);
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
 }
 
 .footer-info p {
