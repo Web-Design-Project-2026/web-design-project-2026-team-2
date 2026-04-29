@@ -22,7 +22,7 @@
   background-color: unset;
   position: relative;
   z-index: 2;
-  margin-left: 80px;
+  margin-left: 100px;
   bottom: -160px;
 }
 
@@ -45,4 +45,48 @@
 
 #hero-content h3 {
   padding-top: 28px;
+}
+
+.about-event {
+  margin: 120px 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--column-gap-desktop);
+}
+
+.about-img {
+  width: 471px;
+  height: 471px;
+}
+
+.about-event-photo {
+  justify-self: end;
+  align-self: end;
+}
+
+.div1 {
+  grid-column: span 2;
+}
+
+.about-event-info h2 {
+  color: var(--primary-default-colour);
+}
+
+.about-event-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.schedule-bttn {
+  background-color: var(--primary-default-colour);
+  color: var(--white-colour);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
+  width: 200px;
+  cursor: pointer;
+  border-radius: 100px;
+  padding: 14px 16px;
 }
