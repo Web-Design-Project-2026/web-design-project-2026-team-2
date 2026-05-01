@@ -1,0 +1,164 @@
+#hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+#hero-section {
+  background: transparent;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#hero-content {
+  background-color: unset;
+  position: relative;
+  z-index: 2;
+  margin-left: 100px;
+  bottom: -160px;
+}
+
+.hero-button {
+  position: absolute;
+  bottom: 30px;
+  left: 48%;
+  z-index: 3;
+}
+
+.arrow {
+  width: 50px;
+}
+
+.logo-hero {
+  width: 600px;
+  height: 78px;
+  margin-left: -15px;
+}
+
+#hero-content h3 {
+  padding-top: 28px;
+}
+
+#about-event {
+  margin: 120px 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--column-gap-desktop);
+}
+
+.about-img {
+  width: 471px;
+  height: 471px;
+}
+
+.about-event-photo {
+  justify-self: end;
+  align-self: end;
+}
+
+.div1 {
+  grid-column: span 2;
+}
+
+.about-event-info h2 {
+  color: var(--primary-default-colour);
+}
+
+.about-event-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.schedule-bttn {
+  background-color: var(--primary-default-colour);
+  color: var(--white-colour);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
+  width: 200px;
+  cursor: pointer;
+  border-radius: 100px;
+  padding: 14px 16px;
+}
+
+.schedule-bttn:hover {
+  background-color: var(--primary-hover-colour);
+}
+
+.schedule-bttn:active {
+  background-color: var(--primary-clicked-colour);
+  color: var(--background-colour);
+}
+
+#sponsors {
+  display: flex;
+  margin: 42px 100px;
+  justify-content: space-between;
+}
+
+#sponsors img {
+  height: 71px;
+}
+
+#countdown {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 100px;
+  align-items: center;
+  text-align: center;
+}
+
+.timebox {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 7.5rem;
+}
+
+.countdown-place p {
+  font-size: var(--subtitle-1-font-size);
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.countdown-bttn {
+  background-color: var(--primary-default-colour);
+  color: var(--white-colour);
+  border: none;
+  border-radius: 100px;
+  padding: 0.75rem 1.5rem;
+  font-size: var(--subtitle-2-font-size);
+  line-height: var(--subtitle-2-line-height);
+  text-transform: var(--subtitle-2-text-transform);
+}
+
+.countdown-bttn:hover {
+  background-color: var(--primary-hover-colour);
+}
+
+.countdown-bttn:active {
+  background-color: var(--primary-clicked-colour);
+  color: var(--background-colour);
+}
+
+.countdown-hero {
+  margin-bottom: 60px;
+}
+
+.timebox h2 {
+  font-size: 5rem;
+}
+
+.timebox p {
+  font-size: 1rem;
+}
