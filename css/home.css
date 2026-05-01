@@ -47,7 +47,7 @@
   padding-top: 28px;
 }
 
-.about-event {
+#about-event {
   margin: 120px 100px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -91,6 +91,15 @@
   padding: 14px 16px;
 }
 
+.schedule-bttn:hover {
+  background-color: var(--primary-hover-colour);
+}
+
+.schedule-bttn:active {
+  background-color: var(--primary-clicked-colour);
+  color: var(--background-colour);
+}
+
 #sponsors {
   display: flex;
   margin: 42px 100px;
@@ -99,4 +108,57 @@
 
 #sponsors img {
   height: 71px;
+}
+
+#countdown {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 100px;
+  align-items: center;
+  text-align: center;
+}
+
+.timebox {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 7.5rem;
+}
+
+.countdown-place p {
+  font-size: var(--subtitle-1-font-size);
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.countdown-bttn {
+  background-color: var(--primary-default-colour);
+  color: var(--white-colour);
+  border: none;
+  border-radius: 100px;
+  padding: 0.75rem 1.5rem;
+  font-size: var(--subtitle-2-font-size);
+  line-height: var(--subtitle-2-line-height);
+  text-transform: var(--subtitle-2-text-transform);
+}
+
+.countdown-bttn:hover {
+  background-color: var(--primary-hover-colour);
+}
+
+.countdown-bttn:active {
+  background-color: var(--primary-clicked-colour);
+  color: var(--background-colour);
+}
+
+.countdown-hero {
+  margin-bottom: 60px;
+}
+
+.timebox h2 {
+  font-size: 5rem;
+}
+
+.timebox p {
+  font-size: 1rem;
 }

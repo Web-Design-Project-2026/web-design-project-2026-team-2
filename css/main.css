@@ -156,6 +156,13 @@ body {
   background-color: var(--background-colour);
 }
 
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--background-colour);
+}
+
 nav ul {
   list-style: none;
   display: flex;
