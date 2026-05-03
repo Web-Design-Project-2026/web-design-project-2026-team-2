@@ -172,7 +172,6 @@
   gap: var(--column-gap-desktop);
 }
 
-/* Make image responsive */
 .about-img {
   width: 100%;
   max-width: 471px;
@@ -219,9 +218,7 @@
   color: var(--background-colour);
 }
 
-/* -------------------- */
-/* ≤ 1000px */
-/* -------------------- */
+/* media query - 1 max width: 1000px* - ABOUT */
 @media (max-width: 1000px) {
   #about-event {
     margin: 80px 60px;
@@ -233,9 +230,7 @@
   }
 }
 
-/* -------------------- */
-/* ≤ 750px */
-/* -------------------- */
+/* media query - 2 max width: 750px* - ABOUT */
 @media (max-width: 750px) {
   #about-event {
     grid-template-columns: 1fr;
@@ -257,9 +252,7 @@
   }
 }
 
-/* -------------------- */
-/* ≤ 500px */
-/* -------------------- */
+/* media query - 3 max width: 500px* - ABOUT */
 @media (max-width: 500px) {
   #about-event {
     margin: 40px 20px;
@@ -289,7 +282,7 @@
   margin: 42px 100px;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* important */
+  flex-wrap: wrap;
   gap: 2rem;
 }
 
@@ -299,9 +292,7 @@
   object-fit: contain;
 }
 
-/* -------------------- */
-/* ≤ 1000px */
-/* -------------------- */
+/* media query - 1 max width: 1000px* - SPONSORS */
 @media (max-width: 1000px) {
   #sponsors {
     margin: 40px 60px;
@@ -314,9 +305,7 @@
   }
 }
 
-/* -------------------- */
-/* ≤ 750px */
-/* -------------------- */
+/* media query - 2 max width: 750px* - SPONSORS */
 @media (max-width: 750px) {
   #sponsors {
     margin: 30px 40px;
@@ -328,9 +317,7 @@
   }
 }
 
-/* -------------------- */
-/* ≤ 500px */
-/* -------------------- */
+/* media query - 3 max width: 500px* - SPONSORS */
 @media (max-width: 500px) {
   #sponsors {
     margin: 20px;
@@ -357,7 +344,7 @@
   display: flex;
   align-items: center;
   gap: 7.5rem;
-  flex-wrap: wrap; /* allows wrapping on small screens */
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -399,9 +386,7 @@
   font-size: 1rem;
 }
 
-/* -------------------- */
-/* ≤ 1000px */
-/* -------------------- */
+/* media query - 1 max width: 1000px* - COUNTDOWN */
 @media (max-width: 1000px) {
   #countdown {
     margin: 80px 60px;
@@ -416,9 +401,7 @@
   }
 }
 
-/* -------------------- */
-/* ≤ 750px */
-/* -------------------- */
+/* media query - 2 max width: 750px* - COUNTDOWN */
 @media (max-width: 750px) {
   #countdown {
     margin: 60px 40px;
@@ -437,9 +420,7 @@
   }
 }
 
-/* -------------------- */
-/* ≤ 500px */
-/* -------------------- */
+/* media query - 3 max width: 500px* - COUNTDOWN */
 @media (max-width: 500px) {
   #countdown {
     margin: 40px 20px;
