@@ -1,3 +1,6 @@
+/* ================== */
+/* HERO VIDEO SECTION */
+/* ================== */
 #hero-video {
   position: absolute;
   top: 0;
@@ -22,13 +25,13 @@
   background-color: unset;
   position: relative;
   z-index: 2;
-  margin-left: 100px;
-  bottom: -160px;
+  margin-left: 6.25rem;
+  bottom: -10rem;
 }
 
 .hero-button {
   position: absolute;
-  bottom: 30px;
+  bottom: 2rem;
   left: 48%;
   z-index: 3;
 }
@@ -47,6 +50,121 @@
   padding-top: 28px;
 }
 
+/* media query - 1 max width: 1000px* - HERO VIDEO */
+@media screen and (max-width: 1000px) {
+  #hero-video {
+    height: 85%;
+  }
+
+  #hero-section {
+    height: 90vh;
+  }
+
+  #hero-content {
+    margin-left: 5rem;
+    bottom: -80px;
+  }
+
+  .hero-button {
+    position: absolute;
+    bottom: 110px;
+    left: 48%;
+    z-index: 3;
+  }
+
+  .arrow {
+    width: 40px;
+  }
+
+  .logo-hero {
+    width: 400px;
+    height: 50px;
+    margin-left: -15px;
+  }
+
+  #hero-content h3 {
+    font-size: 2rem;
+    padding-top: 10px;
+  }
+}
+
+/* media query - 2 max width: 750px* - HERO VIDEO */
+@media screen and (max-width: 750px) {
+  #hero-video {
+    height: 80%;
+  }
+
+  #hero-section {
+    height: 80vh;
+  }
+
+  #hero-content {
+    margin-left: 3rem;
+    bottom: -3rem;
+  }
+
+  .hero-button {
+    position: absolute;
+    bottom: 8rem;
+    left: 48%;
+    z-index: 3;
+  }
+
+  .arrow {
+    width: 2rem;
+  }
+
+  .logo-hero {
+    width: 18.5rem;
+    height: auto;
+    margin-left: -0.5rem;
+  }
+
+  #hero-content h3 {
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+  }
+}
+
+/* media query - 3 max width: 500px* - HERO VIDEO */
+@media screen and (max-width: 500px) {
+  #hero-video {
+    height: 70%;
+  }
+
+  #hero-section {
+    height: 70vh;
+  }
+
+  #hero-content {
+    margin-left: 2rem;
+    bottom: -1rem;
+  }
+
+  .hero-button {
+    bottom: 150px;
+    left: 48%;
+    z-index: 3;
+  }
+
+  .arrow {
+    width: 1.25rem;
+  }
+
+  .logo-hero {
+    width: 200px;
+    height: auto;
+    margin-left: -0.5rem;
+  }
+
+  #hero-content h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* =================== */
+/* ABOUT EVENT SECTION */
+/* =================== */
 #about-event {
   margin: 120px 100px;
   display: grid;
@@ -54,9 +172,11 @@
   gap: var(--column-gap-desktop);
 }
 
+/* Make image responsive */
 .about-img {
-  width: 471px;
-  height: 471px;
+  width: 100%;
+  max-width: 471px;
+  height: auto;
 }
 
 .about-event-photo {
@@ -68,21 +188,20 @@
   grid-column: span 2;
 }
 
-.about-event-info h2 {
-  color: var(--primary-default-colour);
-}
-
 .about-event-info {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
+.about-event-info h2 {
+  color: var(--primary-default-colour);
+}
+
 .schedule-bttn {
   background-color: var(--primary-default-colour);
   color: var(--white-colour);
   border: none;
-  padding: 0.75rem 1.5rem;
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
   width: 200px;
@@ -100,16 +219,132 @@
   color: var(--background-colour);
 }
 
+/* -------------------- */
+/* ≤ 1000px */
+/* -------------------- */
+@media (max-width: 1000px) {
+  #about-event {
+    margin: 80px 60px;
+    gap: 2rem;
+  }
+
+  .about-img {
+    max-width: 400px;
+  }
+}
+
+/* -------------------- */
+/* ≤ 750px */
+/* -------------------- */
+@media (max-width: 750px) {
+  #about-event {
+    grid-template-columns: 1fr;
+    margin: 60px 40px;
+    text-align: center;
+  }
+
+  .about-event-photo {
+    justify-self: center;
+    align-self: center;
+  }
+
+  .div1 {
+    grid-column: span 1;
+  }
+
+  .schedule-bttn {
+    margin: 0 auto;
+  }
+}
+
+/* -------------------- */
+/* ≤ 500px */
+/* -------------------- */
+@media (max-width: 500px) {
+  #about-event {
+    margin: 40px 20px;
+    gap: 1.5rem;
+  }
+
+  .about-img {
+    max-width: 100%;
+  }
+
+  .about-event-info {
+    gap: 1.5rem;
+  }
+
+  .schedule-bttn {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+/* ================ */
+/* SPONSORS SECTION */
+/* ================ */
+
 #sponsors {
   display: flex;
   margin: 42px 100px;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* important */
+  gap: 2rem;
 }
 
 #sponsors img {
   height: 71px;
+  width: auto;
+  object-fit: contain;
 }
 
+/* -------------------- */
+/* ≤ 1000px */
+/* -------------------- */
+@media (max-width: 1000px) {
+  #sponsors {
+    margin: 40px 60px;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+
+  #sponsors img {
+    height: 60px;
+  }
+}
+
+/* -------------------- */
+/* ≤ 750px */
+/* -------------------- */
+@media (max-width: 750px) {
+  #sponsors {
+    margin: 30px 40px;
+    gap: 2rem;
+  }
+
+  #sponsors img {
+    height: 50px;
+  }
+}
+
+/* -------------------- */
+/* ≤ 500px */
+/* -------------------- */
+@media (max-width: 500px) {
+  #sponsors {
+    margin: 20px;
+    gap: 1.5rem;
+  }
+
+  #sponsors img {
+    height: 40px;
+  }
+}
+
+/* ================= */
+/* COUNTDOWN SECTION */
+/* ================= */
 #countdown {
   display: flex;
   flex-direction: column;
@@ -121,8 +356,9 @@
 .timebox {
   display: flex;
   align-items: center;
-  align-content: center;
   gap: 7.5rem;
+  flex-wrap: wrap; /* allows wrapping on small screens */
+  justify-content: center;
 }
 
 .countdown-place p {
@@ -161,4 +397,73 @@
 
 .timebox p {
   font-size: 1rem;
+}
+
+/* -------------------- */
+/* ≤ 1000px */
+/* -------------------- */
+@media (max-width: 1000px) {
+  #countdown {
+    margin: 80px 60px;
+  }
+
+  .timebox {
+    gap: 5rem;
+  }
+
+  .timebox h2 {
+    font-size: 4rem;
+  }
+}
+
+/* -------------------- */
+/* ≤ 750px */
+/* -------------------- */
+@media (max-width: 750px) {
+  #countdown {
+    margin: 60px 40px;
+  }
+
+  .timebox {
+    gap: 3rem;
+  }
+
+  .timebox h2 {
+    font-size: 3rem;
+  }
+
+  .countdown-place p {
+    margin-bottom: 2rem;
+  }
+}
+
+/* -------------------- */
+/* ≤ 500px */
+/* -------------------- */
+@media (max-width: 500px) {
+  #countdown {
+    margin: 40px 20px;
+  }
+
+  .timebox {
+    gap: 2rem;
+  }
+
+  .timebox h2 {
+    font-size: 2.2rem;
+  }
+
+  .timebox p {
+    font-size: 0.85rem;
+  }
+
+  .countdown-bttn {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .countdown-place p {
+    font-size: 0.95rem;
+    margin-top: 1.5rem;
+  }
 }
