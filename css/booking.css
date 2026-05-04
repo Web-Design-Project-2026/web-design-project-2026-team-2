@@ -126,4 +126,38 @@ align-items: stretch;
     cursor: pointer; 
 }
 
+@media screen and (max-width: 900px){
+    #checkout-section{
+            grid-template-columns: 1fr;
+        }
+    #checkout-left, 
+    #checkout-right{ 
+        padding: 2.5rem 2rem;
+    }
+}
 
+
+@media screen and (max-width: 600px){
+    .row{
+        flex-direction: column; 
+        gap:0;
+    }
+
+    #checkout-left{
+        padding: 2rem 1.25rem; 
+    }
+    #checkout-left h1{
+        font-size: 2rem; 
+    }
+    #checkout-left h2{
+        font-size: 1.4rem; 
+    }
+    #summary-box{
+        padding: 1.5rem; 
+    }
+    nav ul{
+        flex-direction: column; 
+        align-items: flex-start; 
+        gap: 1rem; 
+    }
+}
