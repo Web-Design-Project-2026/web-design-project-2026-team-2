@@ -4,36 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valborg</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/booking.css">
 </head>
-<body>
-    <div id="black-line"> </div>
 
+<body>
     <nav> 
         <ul> 
-        <li><a href="">Home</a></li>
-        <li><a href="">About Valborg</a></li>
-        <li><a href="">Schedule</a></li>
-        <li><a href="">Tickets</a></li>
-        <li><a href="">EN / SV</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Valborg</a></li>
+        <li><a href="#">Schedule</a></li>
+        <li><a href="#">Tickets</a></li>
+        <li><a href="#">EN / SV</a></li>
       </ul>
     </nav>
 
 <main> 
     <section id="checkout-section">
+
         <div id="checkout-left">
             <h1>Checkout</h1>
-            <h2>Contact Information</h2>
 
-            <div id="contact-row">
+            <h2>Contact Information</h2>
+            
+            <div class="row">
                 <input type="text" placeholder="First name*" />
                 <input type="text" placeholder="Last name*"/>
             </div>
+
                 <input type ="email" placeholder="Email address*"/>
                 <input type ="tel" placeholder="Phone number*"/> 
 
             <h2> Ticket 1 Information</h2>
-            <div id="ticket-row"> 
+
+            <div class="row"> 
                 <input type="text" placeholder="First name*"/>
+
+
                 <select> 
                <option> Ticket Type </option> 
                <option>Entry Ticket</option>
@@ -41,20 +54,34 @@
                <option>Experience Ticket</option>
                </select>
                </div>
-               <button type="button"> Add another ticket </button>
-               </div>
-               <div id="checkout-right">
-                <img src="./photos/checkout-photo.png" alt="Valborg Celebration Cup"/>
 
+               <button class="link-button"> Add another ticket </button>
+               </div>
+
+               <div id="checkout-right">
+            <img src="./photos/checkout-photo.png" alt="Valborg Celebration Cup"/>
+
+                <div id="summary-box"> 
                 <h2>Order summary</h2>
-                <p>Items and price will be shown here</p>
+
+                <div class="summary-row"> 
+                    <p> 2 x Experience Tickets</p>
+                    <p>400kr</p>
+                    </div>
+                    <div class="summary-row">
                 <p>Delivery - eTicket</p>
+                <p> 0kr</p>
+                </div>
+
+                <div class="summary-row total"> 
                 <p>Total</p>
-                <button>GET YOUR TICKETS</button>
+                <p> 400kr </p>
+                </div>
+
+                <button class="primary-button"> GET YOUR TICKETS</button>
+        </div>
         </div>
     </section>
 </main>
-</body>
-    
 </body>
 </html>
