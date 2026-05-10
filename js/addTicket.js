@@ -28,3 +28,16 @@ function addTicket() {
     addTicketButton.style.display = "none";
   }
 }
+
+const ticketType = document.getElementById("ticket-type");
+const ticketPrice = document.getElementById("ticket-price");
+const select = document.querySelector("select");
+
+select.addEventListener("change", updateOverview);
+
+function updateOverview() {
+//use of selectedOptions was adapted based on: https://jakearchibald.com/2024/how-should-selectedoption-work/
+  const selectedOption = select.selectedOptions[0];
+  ticketType.innerText = select.value;
+  ticketPrice.innerText = selectedOption.dataset.price;
+}

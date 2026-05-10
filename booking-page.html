@@ -47,13 +47,13 @@
             <div class="row">
               <input type="text" placeholder="First name*" />
 
-              <select>
+              <select id="ticket-selector">
                 <option value="">Ticket Type</option>
-                <option value="entry" date-price = "100kr">Entry Ticket</option>
-                <option value="plus" date-price = "150kr">Plus Ticket</option>
-                <option value="experience" date-price = "200kr">Experience Ticket</option>
+                <option value="Entry Ticket" data-price = "100kr">Entry Ticket</option>
+                <option value="Plus Ticket" data-price = "150kr">Plus Ticket</option>
+                <option value="Experience Ticket" data-price = "200kr">Experience Ticket</option>
               </select>
-              
+
             </div>
             </div>
                 <button class="link-button" id= "add-ticket">Add another ticket</button>
@@ -68,11 +68,12 @@
 
           <div id="summary-box">
             <h2>Order summary</h2>
-
+            
             <div class="summary-row">
-              <p>2 x Experience Tickets</p>
-              <p>400kr</p>
+              <p id="ticket-type">No Ticket</p>
+              <p id="ticket-price">0kr</p>
             </div>
+            
             <div class="summary-row">
               <p>Delivery - eTicket</p>
               <p>0kr</p>
@@ -80,7 +81,7 @@
 
             <div class="summary-row total">
               <p>Total</p>
-              <p>400kr</p>
+              <p>0kr</p>
             </div>
 
             <button class="primary-button">GET YOUR TICKETS</button>
