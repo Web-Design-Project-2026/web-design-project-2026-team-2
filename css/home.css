@@ -357,7 +357,7 @@
   }
 }
 
-/* media query -  max width: 750px* - COUNTDOWN */
+/* media query - 2 max width: 750px* - COUNTDOWN */
 @media (max-width: 750px) {
   #countdown {
     margin: 3.75rem 2.5rem;
