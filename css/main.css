@@ -171,7 +171,6 @@ nav ul {
   gap: 3rem;
   padding: 1.25rem 1rem;
   margin: 0;
-  flex-wrap: wrap;
 }
 
 /* media query - 1 max width: 1000px* - NAV */
@@ -184,7 +183,7 @@ nav ul {
 /* media query - 2 max width: 750px* - NAV */
 @media (max-width: 750px) {
   nav ul {
-    gap: 1.5rem;
+    gap: 1.25rem;
     padding: 1rem;
   }
 }
@@ -192,9 +191,9 @@ nav ul {
 /* media query - 3 max width: 500px* - NAV */
 @media (max-width: 500px) {
   nav ul {
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem 0;
+    gap: 0.75rem;
+    padding: 0.75rem 0.5rem;
+    font-size: 0.85rem;
   }
 }
 

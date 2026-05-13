@@ -1,6 +1,7 @@
 /* ================== */
 /* HERO VIDEO SECTION */
 /* ================== */
+
 #hero-video {
   position: absolute;
   top: 0;
@@ -14,10 +15,10 @@
 #hero-section {
   background: transparent;
   position: relative;
-  height: 100vh;
+  height: 95vh;
   overflow: hidden;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-start;
 }
 
@@ -26,13 +27,14 @@
   position: relative;
   z-index: 2;
   margin-left: 6.25rem;
-  bottom: -10rem;
+  margin-bottom: 6rem;
 }
 
 .hero-button {
   position: absolute;
   bottom: 2rem;
-  left: 48%;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 3;
 }
 
@@ -42,7 +44,8 @@
 
 .logo-hero {
   width: 600px;
-  height: 78px;
+  max-width: 100%;
+  height: auto;
   margin-left: -15px;
 }
 
@@ -52,139 +55,102 @@
 
 /* media query - 1 max width: 1000px* - HERO VIDEO */
 @media screen and (max-width: 1000px) {
-  #hero-video {
-    height: 85%;
-  }
-
   #hero-section {
-    height: 90vh;
+    height: 75vh;
   }
 
   #hero-content {
-    margin-left: 5rem;
-    bottom: -80px;
+    margin-left: 4rem;
+    margin-bottom: 5rem;
   }
 
-  .hero-button {
-    position: absolute;
-    bottom: 110px;
-    left: 48%;
-    z-index: 3;
+  .logo-hero {
+    width: 400px;
   }
 
   .arrow {
     width: 40px;
   }
 
-  .logo-hero {
-    width: 400px;
-    height: 50px;
-    margin-left: -15px;
-  }
-
   #hero-content h3 {
-    font-size: 2rem;
-    padding-top: 10px;
+    font-size: 1.6rem;
+    padding-top: 12px;
   }
 }
 
 /* media query - 2 max width: 750px* - HERO VIDEO */
 @media screen and (max-width: 750px) {
-  #hero-video {
-    height: 80%;
-  }
-
   #hero-section {
-    height: 80vh;
+    height: 65vh;
   }
 
   #hero-content {
     margin-left: 3rem;
-    bottom: -3rem;
+    margin-bottom: 4rem;
   }
 
-  .hero-button {
-    position: absolute;
-    bottom: 8rem;
-    left: 48%;
-    z-index: 3;
+  .logo-hero {
+    width: 300px;
   }
 
   .arrow {
     width: 2rem;
   }
 
-  .logo-hero {
-    width: 18.5rem;
-    height: auto;
-    margin-left: -0.5rem;
-  }
-
   #hero-content h3 {
-    font-size: 1.5rem;
-    padding-top: 0.5rem;
+    font-size: 1.3rem;
+    padding-top: 10px;
   }
 }
 
 /* media query - 3 max width: 500px* - HERO VIDEO */
 @media screen and (max-width: 500px) {
-  #hero-video {
-    height: 70%;
-  }
-
   #hero-section {
-    height: 70vh;
+    height: 55vh;
   }
 
   #hero-content {
-    margin-left: 2rem;
-    bottom: -1rem;
+    margin-left: 1.5rem;
+    margin-bottom: 3.5rem;
   }
 
-  .hero-button {
-    bottom: 150px;
-    left: 48%;
-    z-index: 3;
+  .logo-hero {
+    width: 200px;
   }
 
   .arrow {
     width: 1.25rem;
   }
 
-  .logo-hero {
-    width: 200px;
-    height: auto;
-    margin-left: -0.5rem;
-  }
-
   #hero-content h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    padding-top: 8px;
   }
 }
 
 /* =================== */
 /* ABOUT EVENT SECTION */
 /* =================== */
+
 #about-event {
-  margin: 120px 100px;
+  margin: 7.5rem 6.25rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--column-gap-desktop);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.96vw;
+  align-items: stretch;
+}
+
+.about-event-photo {
+  min-width: 0;
+  width: 100%;
 }
 
 .about-img {
   width: 100%;
-  max-width: 471px;
-  height: auto;
-}
-
-.about-event-photo {
-  justify-self: end;
-  align-self: end;
-}
-
-.div1 {
-  grid-column: span 2;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
 }
 
 .about-event-info {
@@ -221,12 +187,7 @@
 /* media query - 1 max width: 1000px* - ABOUT */
 @media (max-width: 1000px) {
   #about-event {
-    margin: 80px 60px;
-    gap: 2rem;
-  }
-
-  .about-img {
-    max-width: 400px;
+    margin: 4.5rem 4rem;
   }
 }
 
@@ -234,33 +195,13 @@
 @media (max-width: 750px) {
   #about-event {
     grid-template-columns: 1fr;
-    margin: 60px 40px;
+    margin: 3.75rem 2.5rem;
+    gap: 1.5rem;
     text-align: center;
   }
 
-  .about-event-photo {
-    justify-self: center;
-    align-self: center;
-  }
-
-  .div1 {
-    grid-column: span 1;
-  }
-
-  .schedule-bttn {
-    margin: 0 auto;
-  }
-}
-
-/* media query - 3 max width: 500px* - ABOUT */
-@media (max-width: 500px) {
-  #about-event {
-    margin: 40px 20px;
-    gap: 1.5rem;
-  }
-
   .about-img {
-    max-width: 100%;
+    height: auto;
   }
 
   .about-event-info {
@@ -270,6 +211,14 @@
   .schedule-bttn {
     width: 100%;
     max-width: 250px;
+    margin: 0 auto;
+  }
+}
+
+/* media query - 3 max width: 500px* - ABOUT */
+@media (max-width: 500px) {
+  #about-event {
+    margin: 2.5rem 1.25rem;
   }
 }
 
@@ -279,11 +228,10 @@
 
 #sponsors {
   display: flex;
-  margin: 42px 100px;
+  margin: 2.625rem 6.25rem;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 #sponsors img {
@@ -295,33 +243,20 @@
 /* media query - 1 max width: 1000px* - SPONSORS */
 @media (max-width: 1000px) {
   #sponsors {
-    margin: 40px 60px;
-    justify-content: center;
-    gap: 2.5rem;
+    margin: 2.5rem 4rem;
+    gap: 0.75rem;
   }
 
   #sponsors img {
-    height: 60px;
+    height: 55px;
   }
 }
 
 /* media query - 2 max width: 750px* - SPONSORS */
 @media (max-width: 750px) {
   #sponsors {
-    margin: 30px 40px;
-    gap: 2rem;
-  }
-
-  #sponsors img {
-    height: 50px;
-  }
-}
-
-/* media query - 3 max width: 500px* - SPONSORS */
-@media (max-width: 500px) {
-  #sponsors {
-    margin: 20px;
-    gap: 1.5rem;
+    margin: 2rem 2.5rem;
+    gap: 0.5rem;
   }
 
   #sponsors img {
@@ -329,23 +264,51 @@
   }
 }
 
+/* media query - 3 max width: 500px* - SPONSORS */
+@media (max-width: 500px) {
+  #sponsors {
+    margin: 1.25rem;
+    gap: 0.25rem;
+  }
+
+  #sponsors img {
+    height: 25px;
+  }
+}
+
 /* ================= */
 /* COUNTDOWN SECTION */
 /* ================= */
+
 #countdown {
   display: flex;
   flex-direction: column;
-  margin: 100px 100px;
+  margin: 6.25rem;
   align-items: center;
   text-align: center;
+}
+
+.countdown-hero {
+  margin-bottom: 3.75rem;
+}
+
+.countdown-hero h2 {
+  font-size: 3rem;
 }
 
 .timebox {
   display: flex;
   align-items: center;
-  gap: 7.5rem;
-  flex-wrap: wrap;
   justify-content: center;
+  gap: 4rem;
+}
+
+.timebox h2 {
+  font-size: 5rem;
+}
+
+.timebox p {
+  font-size: 1rem;
 }
 
 .countdown-place p {
@@ -363,6 +326,7 @@
   font-size: var(--subtitle-2-font-size);
   line-height: var(--subtitle-2-line-height);
   text-transform: var(--subtitle-2-text-transform);
+  cursor: pointer;
 }
 
 .countdown-bttn:hover {
@@ -374,26 +338,18 @@
   color: var(--background-colour);
 }
 
-.countdown-hero {
-  margin-bottom: 60px;
-}
-
-.timebox h2 {
-  font-size: 5rem;
-}
-
-.timebox p {
-  font-size: 1rem;
-}
-
 /* media query - 1 max width: 1000px* - COUNTDOWN */
 @media (max-width: 1000px) {
   #countdown {
-    margin: 80px 60px;
+    margin: 5rem 4rem;
+  }
+
+  .countdown-hero h2 {
+    font-size: 2.5rem;
   }
 
   .timebox {
-    gap: 5rem;
+    gap: 3rem;
   }
 
   .timebox h2 {
@@ -404,26 +360,15 @@
 /* media query - 2 max width: 750px* - COUNTDOWN */
 @media (max-width: 750px) {
   #countdown {
-    margin: 60px 40px;
+    margin: 3.75rem 2.5rem;
   }
 
-  .timebox {
-    gap: 3rem;
+  .countdown-hero {
+    margin-bottom: 2.5rem;
   }
 
-  .timebox h2 {
-    font-size: 3rem;
-  }
-
-  .countdown-place p {
-    margin-bottom: 2rem;
-  }
-}
-
-/* media query - 3 max width: 500px* - COUNTDOWN */
-@media (max-width: 500px) {
-  #countdown {
-    margin: 40px 20px;
+  .countdown-hero h2 {
+    font-size: 2rem;
   }
 
   .timebox {
@@ -431,20 +376,49 @@
   }
 
   .timebox h2 {
-    font-size: 2.2rem;
+    font-size: 3rem;
+  }
+
+  .countdown-place p {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* media query - 3 max width: 500px* - COUNTDOWN */
+@media (max-width: 500px) {
+  #countdown {
+    margin: 2.5rem 1.25rem;
+  }
+
+  .countdown-hero {
+    margin-bottom: 1rem;
+  }
+
+  .countdown-hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .timebox {
+    gap: 1.25rem;
+  }
+
+  .timebox h2 {
+    font-size: 2.5rem;
   }
 
   .timebox p {
-    font-size: 0.85rem;
+    font-size: 1rem;
+  }
+
+  .countdown-place p {
+    font-size: 1rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.5rem;
   }
 
   .countdown-bttn {
     width: 100%;
     max-width: 260px;
-  }
-
-  .countdown-place p {
-    font-size: 0.95rem;
-    margin-top: 1.5rem;
   }
 }
