@@ -1,4 +1,3 @@
-
 const addTicketButton = document.getElementById("add-ticket");
 const ticketContainer = document.getElementById("ticket-container");
 const summaryContainer = document.getElementById("ticket-summary");
@@ -57,6 +56,7 @@ function updateOverview() {
   const allSelects = document.querySelectorAll("select");
   const ticketType = document.querySelectorAll(".ticket-type");
   const ticketPrice = document.querySelectorAll(".ticket-price");
+  const total = document.querySelector(".total-value");
 
   let index = 0;
 
@@ -70,4 +70,13 @@ function updateOverview() {
   const selectedOption = select.options[select.selectedIndex];
   ticketType[index].innerText = select.value;
   ticketPrice[index].innerText = selectedOption.dataset.price;
+
+  let totalPrice = 0;
+
+  for (let i = 0; i < ticketPrice.length; i++) {
+    const price = parseInt(ticketPrice[i].innerText);
+    totalPrice += price;
+  }
+
+  total.innerText = `${totalPrice}kr`;
 }
