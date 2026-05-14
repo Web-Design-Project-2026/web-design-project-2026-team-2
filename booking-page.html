@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Valborg</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,13 +10,14 @@
       href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/booking.css">
-</head>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/booking.css" />
+    <script src="js/addTicket.js" defer></script>
+  </head>
 
-<body>
-    <nav> 
-        <ul> 
+  <body>
+    <nav>
+      <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About Valborg</a></li>
         <li><a href="#">Schedule</a></li>
@@ -25,63 +26,69 @@
       </ul>
     </nav>
 
-<main> 
-    <section id="checkout-section">
-
+    <main>
+      <section id="checkout-section">
         <div id="checkout-left">
-            <h1>Checkout</h1>
+          <h1>Checkout</h1>
 
-            <h2>Contact Information</h2>
-            
+          <h2>Contact Information</h2>
+
+          <div class="row">
+            <input type="text" placeholder="First name*" />
+            <input type="text" placeholder="Last name*" />
+          </div>
+
+          <input type="email" placeholder="Email address*" />
+          <input type="tel" placeholder="Phone number*" />
+
+          <h2>Ticket Information</h2>
+          
+        <div id="ticket-container">
             <div class="row">
-                <input type="text" placeholder="First name*" />
-                <input type="text" placeholder="Last name*"/>
+              <input type="text" placeholder="First name*" />
+
+              <select id="ticket-selector">
+                <option value="No Ticket" data-price="0kr">Ticket Type</option>
+                <option value="Entry Ticket" data-price = "100kr">Entry Ticket</option>
+                <option value="Plus Ticket" data-price = "150kr">Plus Ticket</option>
+                <option value="Experience Ticket" data-price = "200kr">Experience Ticket</option>
+              </select>
+
+            </div>
+            </div>
+                <button class="link-button" id= "add-ticket">Add another ticket</button>
+             </div>
+        </div>
+
+        <div id="checkout-right">
+          <img
+            src="./photos/checkout-photo.png"
+            alt="Valborg Celebration Cup"
+          />
+
+          <div id="summary-box">
+            <h2>Order summary</h2>
+          <div id="ticket-summary">
+            <div class="summary-row">
+              <p class="ticket-type">No Ticket</p>
+              <p class="ticket-price">0kr</p>
+            </div>
+          </div>  
+
+            <div class="summary-row">
+              <p>Delivery - eTicket</p>
+              <p>0kr</p>
             </div>
 
-                <input type ="email" placeholder="Email address*"/>
-                <input type ="tel" placeholder="Phone number*"/> 
+            <div class="summary-row">
+              <p>Total</p>
+              <p class="total-value">0kr</p>
+            </div>
 
-            <h2> Ticket 1 Information</h2>
-
-            <div class="row"> 
-                <input type="text" placeholder="First name*"/>
-
-
-                <select> 
-               <option> Ticket Type </option> 
-               <option>Entry Ticket</option>
-               <option>Plus Ticket </option>
-               <option>Experience Ticket</option>
-               </select>
-               </div>
-
-               <button class="link-button"> Add another ticket </button>
-               </div>
-
-               <div id="checkout-right">
-            <img src="./photos/checkout-photo.png" alt="Valborg Celebration Cup"/>
-
-                <div id="summary-box"> 
-                <h2>Order summary</h2>
-
-                <div class="summary-row"> 
-                    <p> 2 x Experience Tickets</p>
-                    <p>400kr</p>
-                    </div>
-                    <div class="summary-row">
-                <p>Delivery - eTicket</p>
-                <p> 0kr</p>
-                </div>
-
-                <div class="summary-row total"> 
-                <p>Total</p>
-                <p> 400kr </p>
-                </div>
-
-                <button class="primary-button"> GET YOUR TICKETS</button>
+            <button class="primary-button">GET YOUR TICKETS</button>
+          </div>
         </div>
-        </div>
-    </section>
-</main>
-</body>
+      </section>
+    </main>
+  </body>
 </html>
