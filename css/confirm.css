@@ -172,8 +172,8 @@
   line-height: 1;
 }
 
-.banner-close:hover {
-  opacity: 0.6;
+.banner-text {
+  color: var(--background-colour);
 }
 
 /* media query - 1 max width: 1000px* - CONFIRM */
