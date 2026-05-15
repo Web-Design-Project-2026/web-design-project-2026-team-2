@@ -86,11 +86,19 @@ section p {
 }
 
 button {
-  color: var(--main-text-colour);
+  background-color: var(--primary-default-colour);
+  color: var(--white-colour);
+  border: none;
+  border-radius: 100px;
+  padding: 0.75rem 1.5rem;
+  font-size: var(--subtitle-2-font-size);
+  line-height: var(--subtitle-2-line-height);
+  text-transform: var(--subtitle-2-text-transform);
+  cursor: pointer;
   display: inline-flex;
-  width: 60%;
+  width: 70%;
   height: 3.5rem;
-  padding: 0.75rem 2rem;
+  padding: 0.75rem 1.5rem;
   justify-content: center;
   justify-self: center;
   align-items: center;
@@ -117,6 +125,7 @@ button {
   }
 
   button {
+    width: 80%;
     font-size: 0.8rem;
   }
 
@@ -136,15 +145,18 @@ button {
     font-size: var(--heading-3-font-size);
   }
 }
-
+/* media query - 3 max width: 841px - TICKET CARDS */
 @media screen and (max-width: 841px) {
   .ticket-container {
     margin: 5% 2% 0% 2%;
     column-gap: 0.5rem;
   }
+  button {
+    width: 80%;
+  }
 }
 
-/* media query - 3 max width: 687px - TICKET CARDS */
+/* media query - 4 max width: 687px - TICKET CARDS */
 @media screen and (max-width: 687px) {
   .ticket-container {
     display: grid;
@@ -176,14 +188,14 @@ button {
   }
 }
 
-/* media query - 4 max width: 606px* - TICKET CARDS*/
+/* media query - 5 max width: 606px* - TICKET CARDS*/
 @media screen and (max-width: 606px) {
   section p {
     font-size: 0.7rem;
   }
 }
 
-/* media query - 5 max width: 579px* - TICKET CARDS*/
+/* media query - 6 max width: 579px* - TICKET CARDS*/
 @media screen and (max-width: 579px) {
   .ticket-container {
     grid-template-columns: 1fr;
@@ -229,14 +241,17 @@ button {
   button {
     grid-column: 1/2;
     margin-top: 10%;
-    width: 30%;
+    width: 50%;
   }
 }
 
-/* media query - 6 max width: 442px* - TICKET CARDS*/
+/* media query - 7 max width: 442px* - TICKET CARDS*/
 @media screen and (max-width: 442px) {
   .ticket-container {
     grid-template-columns: 1fr;
     margin: 0;
+  }
+  button {
+    width: 50%;
   }
 }
