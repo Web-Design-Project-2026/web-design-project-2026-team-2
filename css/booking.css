@@ -114,6 +114,7 @@ align-items: stretch;
 }
 
 .primary-button{
+    display:block;
     width: 100%;
     margin-top: 2rem; 
     padding: 1.1rem;
@@ -121,9 +122,14 @@ align-items: stretch;
     border-radius: 999px; 
     background: var(--primary-default-colour);
     color: var(--main-text-color); 
+    font-family: "Gabarito", sans-serif;
+    font-size: 1rem; 
     font-weight: 700;
     letter-spacing: 0.5px;
     cursor: pointer; 
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 @media screen and (max-width: 900px){
