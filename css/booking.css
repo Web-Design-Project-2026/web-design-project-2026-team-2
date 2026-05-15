@@ -33,23 +33,6 @@
   gap: 1.5rem;
 }
 
-/* ================= */
-/* INPUT GROUP       */
-/* ================= */
-.input-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-  width: 100%;
-}
-
-.input-group label {
-  font-family: "Gabarito", sans-serif;
-  font-size: var(--body-2-font-size);
-  line-height: var(--body-2-line-height);
-  color: var(--main-text-colour);
-}
-
 #checkout-left input,
 #checkout-left select {
   width: 100%;
@@ -64,7 +47,7 @@
 }
 
 #checkout-left input::placeholder {
-  color: var(--unavailable-colour);
+  color: #aaa;
 }
 
 #checkout-left input:focus,
