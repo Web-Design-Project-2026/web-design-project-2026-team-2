@@ -85,7 +85,8 @@ section p {
   aspect-ratio: 1/1;
 }
 
-button {
+button,
+.ticket-button {
   color: var(--main-text-colour);
   display: inline-flex;
   width: 60%;
@@ -99,6 +100,8 @@ button {
   border-radius: 100px;
   grid-column: 2/3;
   transform: translateY(-10vh);
+  font-family: "Gabarito", sans-serif;
+  cursor:pointer; 
 }
 
 /* media query - 1 max width: 1233px* - TICKET CARDS*/
