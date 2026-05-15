@@ -27,9 +27,27 @@
   margin-bottom: 1rem;
   font-size: 1.75rem;
 }
+
 .row {
   display: flex;
   gap: 1.5rem;
+}
+
+/* ================= */
+/* INPUT GROUP       */
+/* ================= */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  width: 100%;
+}
+
+.input-group label {
+  font-family: "Gabarito", sans-serif;
+  font-size: var(--body-2-font-size);
+  line-height: var(--body-2-line-height);
+  color: var(--main-text-colour);
 }
 
 #checkout-left input,
@@ -37,19 +55,16 @@
   width: 100%;
   padding: 1rem 1.25rem;
   margin-bottom: 1.25rem;
-
   border: 1px solid var(--primary-default-colour);
   border-radius: 999px;
-
   background: transparent;
-  color: var(--main-text-color);
-
+  color: var(--main-text-colour);
   font-family: "Gabarito", sans-serif;
   box-sizing: border-box;
 }
 
 #checkout-left input::placeholder {
-  color: #aaa;
+  color: var(--unavailable-colour);
 }
 
 #checkout-left input:focus,
@@ -61,7 +76,7 @@
 .link-button {
   background: transparent;
   border: none;
-  color: var(--main-text-color);
+  color: var(--main-text-colour);
   text-decoration: underline;
   padding: 0;
   margin-top: 0.5rem;
@@ -90,6 +105,7 @@
 #summary-box {
   padding: 2.5rem 2rem 2rem;
 }
+
 .summary-row {
   display: flex;
   justify-content: space-between;
@@ -119,7 +135,7 @@
   border: none;
   border-radius: 999px;
   background: var(--primary-default-colour);
-  color: var(--main-text-color);
+  color: var(--main-text-colour);
   font-family: "Gabarito", sans-serif;
   font-size: 1rem;
   font-weight: 700;
@@ -128,6 +144,27 @@
   text-decoration: none;
   text-align: center;
   box-sizing: border-box;
+}
+
+/* ================== */
+/* REMOVE TICKET BTN  */
+/* ================== */
+.remove-ticket {
+  background: transparent;
+  border: none;
+  color: var(--primary-default-colour);
+  font-family: "Gabarito", sans-serif;
+  font-size: var(--body-2-font-size);
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  white-space: nowrap;
+  align-self: center;
+  margin-bottom: 1.25rem;
+}
+
+.remove-ticket:hover {
+  color: var(--primary-hover-colour);
 }
 
 @media screen and (max-width: 900px) {
@@ -145,7 +182,6 @@
     flex-direction: column;
     gap: 0;
   }
-
   #checkout-left {
     padding: 2rem 1.25rem;
   }
