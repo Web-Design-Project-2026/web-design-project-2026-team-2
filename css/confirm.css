@@ -63,3 +63,148 @@
 .countdown-hero p {
   font-size: var(--subtitle-1-font-size);
 }
+
+/* media query - 1 max width: 1000px* - CONFIRM */
+@media (max-width: 1000px) {
+  #countdown {
+    margin: 3rem 4rem;
+  }
+
+  .timebox {
+    gap: 3rem;
+  }
+
+  .timebox h2 {
+    font-size: 4rem;
+  }
+}
+
+/* media query - 2 max width: 750px* - CONFIRM */
+@media (max-width: 750px) {
+  #countdown {
+    margin: 2.5rem 2.5rem;
+  }
+
+  .timebox {
+    gap: 2rem;
+  }
+
+  .timebox h2 {
+    font-size: 3rem;
+  }
+
+  .countdown-place p {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
+/* media query - 3 max width: 500px* - CONFIRM */
+@media (max-width: 500px) {
+  #confirmation {
+    margin-top: 1.5rem;
+    gap: 1rem;
+    padding: 0 1.25rem;
+  }
+
+  #countdown {
+    margin: 2rem 1.25rem;
+  }
+
+  .timebox {
+    gap: 1.25rem;
+  }
+
+  .timebox h2 {
+    font-size: 2.2rem;
+  }
+
+  .timebox p {
+    font-size: 0.85rem;
+  }
+
+  .countdown-place p {
+    font-size: 0.9rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+}
+
+/* ================= */
+/* BOOKING BANNER    */
+/* ================= */
+.booking-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  background-color: var(--secondary-default-colour);
+  color: var(--background-colour);
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
+  font-weight: 600;
+  padding: 0.85rem 1.25rem;
+  border-radius: 6px;
+  margin: 0 auto 2rem auto;
+  max-width: 500px;
+  width: 100%;
+}
+
+.banner-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.banner-check {
+  font-size: var(--body-1-font-size);
+  color: var(--background-colour);
+}
+
+.banner-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.banner-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #1a1a1a;
+  padding: 0;
+  margin-left: 1rem;
+  line-height: 1;
+}
+
+.banner-close:hover {
+  opacity: 0.6;
+}
+
+/* media query - 1 max width: 1000px* - CONFIRM */
+@media (max-width: 1000px) {
+  .booking-banner {
+    max-width: 450px;
+  }
+}
+
+/* media query - 2 max width: 750px* - CONFIRM */
+@media (max-width: 750px) {
+  .booking-banner {
+    max-width: 350px;
+  }
+}
+
+/* media query - 3 max width: 500px* - CONFIRM */
+@media (max-width: 500px) {
+  .booking-banner {
+    max-width: 250px;
+  }
+}
