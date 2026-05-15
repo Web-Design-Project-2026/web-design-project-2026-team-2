@@ -1,169 +1,161 @@
-@import url(main.css); 
+@import url(main.css);
 
-#checkout-section{
-max-width: 1224px; 
-margin: 0 auto;
-padding : 0 1rem; 
-display: grid; 
-grid-template-columns: 1.4fr 1fr; 
-gap: 2rem;
-background-color: #0a0a0a;    
-align-items: stretch;      
+#checkout-section {
+  max-width: 1224px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 2rem;
+  background-color: #0a0a0a;
+  align-items: stretch;
 }
 
-#checkout-left{
-    padding: 4rem 3rem;
+#checkout-left {
+  padding: 4rem 3rem;
 }
 
-#checkout-left h1{
-    font-size: 2.5rem; 
-    margin-bottom: 2rem;
-    text-align: center; 
-    text-transform: none;
+#checkout-left h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-transform: none;
 }
 
-#checkout-left h2{
-    margin-top: 2rem; 
-    margin-bottom: 1rem;
-    font-size: 1.75rem; 
-    
+#checkout-left h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
 }
-.row{
-   display: flex;
-    gap: 1.5rem; 
+.row {
+  display: flex;
+  gap: 1.5rem;
 }
 
-#checkout-left input, 
-#checkout-left select{
-    width: 100%; 
-    padding: 1rem 1.25rem; 
-    margin-bottom: 1.25rem; 
+#checkout-left input,
+#checkout-left select {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.25rem;
 
-    border: 1px solid var(--primary-default-colour); 
-    border-radius: 999px;
+  border: 1px solid var(--primary-default-colour);
+  border-radius: 999px;
 
-    background: transparent; 
-    color: var(--main-text-color); 
+  background: transparent;
+  color: var(--main-text-color);
 
-    font-family: "Gabarito", sans-serif; 
-    box-sizing:border-box;
+  font-family: "Gabarito", sans-serif;
+  box-sizing: border-box;
 }
 
 #checkout-left input::placeholder {
-    color: #aaa; 
+  color: #aaa;
 }
 
 #checkout-left input:focus,
-#checkout-left select:focus{
-    outline: none; 
-    border-color: #ff2b2b; 
+#checkout-left select:focus {
+  outline: none;
+  border-color: #ff2b2b;
 }
 
-.link-button{
-    background: transparent; 
-    border: none; 
-    color: var(--main-text-color); 
-    text-decoration: underline;
-    padding: 0; 
-    margin-top: 0.5rem;
-    cursor: pointer; 
+.link-button {
+  background: transparent;
+  border: none;
+  color: var(--main-text-color);
+  text-decoration: underline;
+  padding: 0;
+  margin-top: 0.5rem;
+  cursor: pointer;
 }
 
-#checkout-right{
-    height: 100%; 
-    font-size: 1rem; 
-    font-style: normal;
-    line-height: 40px; 
-    display: flex;
-    flex-direction: column;
-    background:#161616;
-    border-radius: 8px; 
-    overflow: hidden;
-
+#checkout-right {
+  height: 100%;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  background: #161616;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 #checkout-right img {
-    width: 100%; 
-    aspect-ratio: 16/9; 
-    height: 18rem; 
-    object-fit: cover;
+  width: 100%;
+  aspect-ratio: 16/9;
+  height: 18rem;
+  object-fit: cover;
 }
 
-#summary-box{
-    padding: 2.5rem 2rem 2rem; 
+#summary-box {
+  padding: 2.5rem 2rem 2rem;
 }
-.summary-row{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-}
-
-.summary-row p{
-    margin: 0; 
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
-.total{
-    margin-top: 0.5rem;
-    font-weight: 700; 
+.summary-row p {
+  margin: 0;
 }
 
-#summary-box hr{
-    border:none;
-    border-top: 1px solid #333; 
-    margin: 1.5rem 0; 
+.total {
+  margin-top: 0.5rem;
+  font-weight: 700;
 }
 
-.primary-button{
-    display:block;
-    width: 100%;
-    margin-top: 2rem; 
-    padding: 1.1rem;
-    border: none; 
-    border-radius: 999px; 
-    background: var(--primary-default-colour);
-    color: var(--main-text-color); 
-    font-family: "Gabarito", sans-serif;
-    font-size: 1rem; 
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    cursor: pointer; 
-    text-decoration: none;
-    text-align: center;
-    box-sizing: border-box;
+#summary-box hr {
+  border: none;
+  border-top: 1px solid #333;
+  margin: 1.5rem 0;
 }
 
-@media screen and (max-width: 900px){
-    #checkout-section{
-            grid-template-columns: 1fr;
-        }
-    #checkout-left, 
-    #checkout-right{ 
-        padding: 2.5rem 2rem;
-    }
+.primary-button {
+  display: block;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 1.1rem;
+  border: none;
+  border-radius: 999px;
+  background: var(--primary-default-colour);
+  color: var(--main-text-color);
+  font-family: "Gabarito", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  box-sizing: border-box;
 }
 
+@media screen and (max-width: 900px) {
+  #checkout-section {
+    grid-template-columns: 1fr;
+  }
+  #checkout-left,
+  #checkout-right {
+    padding: 2.5rem 2rem;
+  }
+}
 
-@media screen and (max-width: 600px){
-    .row{
-        flex-direction: column; 
-        gap:0;
-    }
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+    gap: 0;
+  }
 
-    #checkout-left{
-        padding: 2rem 1.25rem; 
-    }
-    #checkout-left h1{
-        font-size: 2rem; 
-    }
-    #checkout-left h2{
-        font-size: 1.4rem; 
-    }
-    #summary-box{
-        padding: 1.5rem; 
-    }
-    nav ul{
-        flex-direction: column; 
-        align-items: flex-start; 
-        gap: 1rem; 
-    }
+  #checkout-left {
+    padding: 2rem 1.25rem;
+  }
+  #checkout-left h1 {
+    font-size: 2rem;
+  }
+  #checkout-left h2 {
+    font-size: 1.4rem;
+  }
+  #summary-box {
+    padding: 1.5rem;
+  }
 }
