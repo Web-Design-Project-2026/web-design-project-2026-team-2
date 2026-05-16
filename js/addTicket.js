@@ -15,19 +15,29 @@ function addTicket() {
     return;
   }
 
+  const ticketIndex = ticketContainer.querySelectorAll(".row").length + 1;
+  const inputId = `ticket-first-name-${ticketIndex}`;
+
   const row = document.createElement("div");
   const summary = document.createElement("div");
 
+  const selectId = `ticket-type-${ticketIndex}`;
   row.innerHTML = `
     <div class="row">
-      <input type="text" placeholder="First name*" />
-      <select>
-        <option value="No Ticket" data-price="0kr">Ticket Type</option>
-        <option value="Entry Ticket" data-price="100kr">Entry Ticket</option>
-        <option value="Plus Ticket" data-price="150kr">Plus Ticket</option>
-        <option value="Experience Ticket" data-price="200kr">Experience Ticket</option>
-      </select>
-      <button class="remove-ticket">Remove</button>
+      <div class="input-group">
+        <label for="${inputId}">First name</label>
+        <input id="${inputId}" type="text" placeholder="e.g. John" />
+      </div>
+      <div class="input-group">
+        <label for="${selectId}" class="sr-only">Ticket type</label>
+        <select id="${selectId}">
+          <option value="No Ticket" data-price="0kr">Ticket Type</option>
+          <option value="Entry Ticket" data-price="100kr">Entry Ticket</option>
+          <option value="Plus Ticket" data-price="150kr">Plus Ticket</option>
+          <option value="Experience Ticket" data-price="200kr">Experience Ticket</option>
+        </select>
+      </div>
+      <button class="remove-ticket"><img src="./icons/cancel.png" alt="Remove ticket" /></button>
     </div>
   `;
 
