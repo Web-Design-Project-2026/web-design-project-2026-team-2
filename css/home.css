@@ -1,0 +1,424 @@
+/* ================== */
+/* HERO VIDEO SECTION */
+/* ================== */
+
+#hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+#hero-section {
+  background: transparent;
+  position: relative;
+  height: 95vh;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+#hero-content {
+  background-color: unset;
+  position: relative;
+  z-index: 2;
+  margin-left: 6.25rem;
+  margin-bottom: 6rem;
+}
+
+.hero-button {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.arrow {
+  width: 50px;
+}
+
+.logo-hero {
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  margin-left: -15px;
+}
+
+#hero-content h3 {
+  padding-top: 28px;
+}
+
+/* media query - 1 max width: 1000px* - HERO VIDEO */
+@media screen and (max-width: 1000px) {
+  #hero-section {
+    height: 75vh;
+  }
+
+  #hero-content {
+    margin-left: 4rem;
+    margin-bottom: 5rem;
+  }
+
+  .logo-hero {
+    width: 400px;
+  }
+
+  .arrow {
+    width: 40px;
+  }
+
+  #hero-content h3 {
+    font-size: 1.6rem;
+    padding-top: 12px;
+  }
+}
+
+/* media query - 2 max width: 750px* - HERO VIDEO */
+@media screen and (max-width: 750px) {
+  #hero-section {
+    height: 65vh;
+  }
+
+  #hero-content {
+    margin-left: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .logo-hero {
+    width: 300px;
+  }
+
+  .arrow {
+    width: 2rem;
+  }
+
+  #hero-content h3 {
+    font-size: 1.3rem;
+    padding-top: 10px;
+  }
+}
+
+/* media query - 3 max width: 500px* - HERO VIDEO */
+@media screen and (max-width: 500px) {
+  #hero-section {
+    height: 55vh;
+  }
+
+  #hero-content {
+    margin-left: 1.5rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .logo-hero {
+    width: 200px;
+  }
+
+  .arrow {
+    width: 1.25rem;
+  }
+
+  #hero-content h3 {
+    font-size: 1rem;
+    padding-top: 8px;
+  }
+}
+
+/* =================== */
+/* ABOUT EVENT SECTION */
+/* =================== */
+
+#about-event {
+  margin: 7.5rem 6.25rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.96vw;
+  align-items: stretch;
+}
+
+.about-event-photo {
+  min-width: 0;
+  width: 100%;
+}
+
+.about-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+.about-event-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-event-info h2 {
+  color: var(--primary-default-colour);
+}
+
+.schedule-bttn {
+  background-color: var(--primary-default-colour);
+  color: var(--white-colour);
+  border: none;
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
+  width: 200px;
+  cursor: pointer;
+  border-radius: 100px;
+  padding: 14px 16px;
+}
+
+.schedule-bttn:hover {
+  background-color: var(--primary-hover-colour);
+}
+
+.schedule-bttn:active {
+  background-color: var(--primary-clicked-colour);
+  color: var(--background-colour);
+}
+
+/* media query - 1 max width: 1000px* - ABOUT */
+@media (max-width: 1000px) {
+  #about-event {
+    margin: 4.5rem 4rem;
+  }
+}
+
+/* media query - 2 max width: 750px* - ABOUT */
+@media (max-width: 750px) {
+  #about-event {
+    grid-template-columns: 1fr;
+    margin: 3.75rem 2.5rem;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .about-img {
+    height: auto;
+  }
+
+  .about-event-info {
+    gap: 1.5rem;
+  }
+
+  .schedule-bttn {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+}
+
+/* media query - 3 max width: 500px* - ABOUT */
+@media (max-width: 500px) {
+  #about-event {
+    margin: 2.5rem 1.25rem;
+  }
+}
+
+/* ================ */
+/* SPONSORS SECTION */
+/* ================ */
+
+#sponsors {
+  display: flex;
+  margin: 2.625rem 6.25rem;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+#sponsors img {
+  height: 71px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* media query - 1 max width: 1000px* - SPONSORS */
+@media (max-width: 1000px) {
+  #sponsors {
+    margin: 2.5rem 4rem;
+    gap: 0.75rem;
+  }
+
+  #sponsors img {
+    height: 55px;
+  }
+}
+
+/* media query - 2 max width: 750px* - SPONSORS */
+@media (max-width: 750px) {
+  #sponsors {
+    margin: 2rem 2.5rem;
+    gap: 0.5rem;
+  }
+
+  #sponsors img {
+    height: 40px;
+  }
+}
+
+/* media query - 3 max width: 500px* - SPONSORS */
+@media (max-width: 500px) {
+  #sponsors {
+    margin: 1.25rem;
+    gap: 0.25rem;
+  }
+
+  #sponsors img {
+    height: 25px;
+  }
+}
+
+/* ================= */
+/* COUNTDOWN SECTION */
+/* ================= */
+
+#countdown {
+  display: flex;
+  flex-direction: column;
+  margin: 6.25rem;
+  align-items: center;
+  text-align: center;
+}
+
+.countdown-hero {
+  margin-bottom: 3.75rem;
+}
+
+.countdown-hero h2 {
+  font-size: 3rem;
+}
+
+.timebox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.timebox h2 {
+  font-size: 5rem;
+}
+
+.timebox p {
+  font-size: 1rem;
+}
+
+.countdown-place p {
+  font-size: var(--subtitle-1-font-size);
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.countdown-bttn {
+  background-color: var(--primary-default-colour);
+  color: var(--white-colour);
+  border: none;
+  border-radius: 100px;
+  padding: 0.75rem 1.5rem;
+  font-size: var(--subtitle-2-font-size);
+  line-height: var(--subtitle-2-line-height);
+  text-transform: var(--subtitle-2-text-transform);
+  cursor: pointer;
+}
+
+.countdown-bttn:hover {
+  background-color: var(--primary-hover-colour);
+}
+
+.countdown-bttn:active {
+  background-color: var(--primary-clicked-colour);
+  color: var(--background-colour);
+}
+
+/* media query - 1 max width: 1000px* - COUNTDOWN */
+@media (max-width: 1000px) {
+  #countdown {
+    margin: 5rem 4rem;
+  }
+
+  .countdown-hero h2 {
+    font-size: 2.5rem;
+  }
+
+  .timebox {
+    gap: 3rem;
+  }
+
+  .timebox h2 {
+    font-size: 4rem;
+  }
+}
+
+/* media query - 2 max width: 750px* - COUNTDOWN */
+@media (max-width: 750px) {
+  #countdown {
+    margin: 3.75rem 2.5rem;
+  }
+
+  .countdown-hero {
+    margin-bottom: 2.5rem;
+  }
+
+  .countdown-hero h2 {
+    font-size: 2rem;
+  }
+
+  .timebox {
+    gap: 2rem;
+  }
+
+  .timebox h2 {
+    font-size: 3rem;
+  }
+
+  .countdown-place p {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* media query - 3 max width: 500px* - COUNTDOWN */
+@media (max-width: 500px) {
+  #countdown {
+    margin: 2.5rem 1.25rem;
+  }
+
+  .countdown-hero {
+    margin-bottom: 1rem;
+  }
+
+  .countdown-hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .timebox {
+    gap: 1.25rem;
+  }
+
+  .timebox h2 {
+    font-size: 2.5rem;
+  }
+
+  .timebox p {
+    font-size: 1rem;
+  }
+
+  .countdown-place p {
+    font-size: 1rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .countdown-bttn {
+    width: 100%;
+    max-width: 260px;
+  }
+}

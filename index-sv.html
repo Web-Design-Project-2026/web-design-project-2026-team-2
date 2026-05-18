@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valborg</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <script src="countdown.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="#about-event">Om Valborg</a></li>
+        <li><a href="schedule.html">Schema</a></li>
+        <li><a href="tickets-page.html">Biljetter</a></li>
+        <li><a href="index.html"> EN </a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="hero-section">
+        <video autoplay muted loop playsinline id="hero-video">
+          <source src="./photos/Valborg.mp4" type="video/mp4" />
+        </video>
+
+        <div id="hero-content">
+          <img
+            class="logo-hero"
+            alt="Valborg-logga"
+            src="./photos/VALBORG.png"
+          />
+          <h3>29-30 April 2027 | Hälsoparken</h3>
+        </div>
+
+        <a class="hero-button" href="#countdown">
+          <img
+            class="arrow"
+            src="./photos/arrow-down.png"
+            alt="Scrolla till nästa sektion"
+          />
+        </a>
+      </section>
+
+      <section id="about-event">
+        <div class="about-event-info">
+          <h2>Om Valborg</h2>
+          <p class="about-text">
+            Valborg är en av Sveriges mest ikoniska traditioner — en hyllning
+            till vår, gemenskap och nystart. Vid Jönköping University, it samlar
+            studenter, vänner och besökare för en oförglömlig en dag fylld av
+            musik, energi och atmosfär.
+          </p>
+          <p class="about-text">
+            Evenemanget utspelar sig i Hälsoparken och blandar
+            liveframträdanden, bra vibbar, och en livlig folkmassa för att
+            markera ankomsten av ljusare dagar. Om du är här för musiken,
+            människorna eller upplevelsen, Valborg är där universitetet blir
+            levande.
+          </p>
+          <button class="schedule-bttn">Se schemat</button>
+        </div>
+        <div class="about-event-photo">
+          <img
+            class="about-img"
+            src="./photos/about-event.png"
+            alt="Sexkreation medlemmar i gröna overaller som håller färgade röksignaler"
+          />
+        </div>
+      </section>
+
+      <section id="sponsors">
+        <img
+          class="jsu-marketing-logo"
+          src="./photos/jsu-marketing-logo.png"
+          alt="JSU Marketing Team Logga"
+        />
+        <img class="rio-logo" src="./photos/rio-logo.png" alt="RIO Logo" />
+        <img class="jsu-logo" src="./photos/jsu-logo.png" alt="JSU Logo" />
+      </section>
+
+      <section id="countdown">
+        <div class="countdown-hero">
+          <h2>Nedräkning till Valborg</h2>
+        </div>
+        <div class="timebox">
+          <div class="time">
+            <h2 class="days">00</h2>
+            <p>Dagar</p>
+          </div>
+          <div class="time">
+            <h2 class="hours">00</h2>
+            <p>Timmar</p>
+          </div>
+          <div class="time">
+            <h2 class="minutes">00</h2>
+            <p>Minuter</p>
+          </div>
+          <div class="time">
+            <h2 class="seconds">00</h2>
+            <p>Sekunder</p>
+          </div>
+        </div>
+        <div class="countdown-place">
+          <p>29 - 30 April 2027 | Hälsoparken</p>
+        </div>
+        <button class="countdown-bttn">Hämta dina biljetter</button>
+      </section>
+    </main>
+
+    <footer>
+      <div id="footer-name">
+        <img
+          class="logo-footer"
+          alt="Valborg-logo"
+          src="./photos/VALBORG.png"
+        />
+        <p>
+          En hyllning till våren, musiken,<br />
+          och gemenskapen vid Jönköping University.
+        </p>
+      </div>
+
+      <div class="footer-info">
+        <div id="footer-links">
+          <h4>Länkar</h4>
+          <p>Om</p>
+          <p>Schema</p>
+          <p>Biljetter</p>
+        </div>
+        <div class="footer-event">
+          <h4>Evenemang</h4>
+          <p>30 April 2027</p>
+          <p>Hälsoparken</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

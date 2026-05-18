@@ -1,0 +1,257 @@
+@import url(main.css);
+* {
+  box-sizing: border-box;
+}
+.tickets-heading-3 {
+  color: var(--primary-default-colour);
+  text-align: center;
+  margin: 0;
+}
+
+#popular-subtitle-2 {
+  color: var(--primary-default-colour);
+}
+
+.ticket-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 4.5rem;
+  margin: 5% 10% 0% 10%;
+}
+
+section {
+  color: var(--main-text-colour);
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+}
+
+section h4 {
+  margin-top: 1rem;
+}
+
+section p {
+  margin-top: 0.5rem;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.price {
+  text-align: start;
+  padding: 1rem;
+}
+
+.entry-flexbox {
+  display: flex;
+  margin: 5%;
+  padding: 5%;
+  border: 5px solid var(--error-default-colour);
+  border-radius: 20px 20px 20px 20px;
+  background: var(--background-colour);
+  height: 60vh;
+}
+
+.plus-flexbox {
+  display: flex;
+  margin: 5%;
+  padding: 5%;
+  border: 5px solid var(--error-default-colour);
+  border-radius: 20px 20px 20px 20px;
+  background: var(--background-colour);
+  height: 60vh;
+}
+
+.experience-flexbox {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+  padding: 5%;
+  border: 5px solid var(--primary-default-colour);
+  border-radius: 20px 20px 20px 20px;
+  background: var(--background-colour);
+  transform: translateY(-10vh);
+}
+
+.ticket-description {
+  padding-left: 1.5rem;
+}
+
+.ticket-benefit-icons {
+  display: inline;
+  vertical-align: middle;
+  padding: 2%;
+  width: 1.75rem;
+  height: 1.75rem;
+  aspect-ratio: 1/1;
+}
+
+button {
+  background-color: var(--primary-default-colour);
+  color: var(--white-colour);
+  border: none;
+  border-radius: 100px;
+  padding: 0.75rem 1.5rem;
+  font-size: var(--subtitle-2-font-size);
+  line-height: var(--subtitle-2-line-height);
+  text-transform: var(--subtitle-2-text-transform);
+  cursor: pointer;
+  display: inline-flex;
+  width: 70%;
+  height: 3.5rem;
+  padding: 0.75rem 1.5rem;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  background: var(--primary-default-colour);
+  border: 5px solid var(--primary-default-colour);
+  border-radius: 100px;
+  grid-column: 2/3;
+  transform: translateY(-10vh);
+}
+
+/* media query - 1 max width: 1233px* - TICKET CARDS*/
+
+@media screen and (max-width: 1233px) {
+  .ticket-container {
+    column-gap: 1rem;
+  }
+
+  section p {
+    font-size: smaller;
+  }
+
+  #popular-subtitle-2 {
+    font-size: smaller;
+  }
+
+  button {
+    width: 80%;
+    font-size: 0.8rem;
+  }
+
+  .ticket-benefit-icons {
+    width: 1.5rem;
+    height: 1.5rem;
+    aspect-ratio: 1/1;
+  }
+}
+
+/* media query - 2 max width: 986px - TICKET CARDS */
+@media screen and (max-width: 986px) {
+  .ticket-container {
+    column-gap: 1rem;
+  }
+  .price {
+    font-size: var(--heading-3-font-size);
+  }
+}
+/* media query - 3 max width: 841px - TICKET CARDS */
+@media screen and (max-width: 841px) {
+  .ticket-container {
+    margin: 5% 2% 0% 2%;
+    column-gap: 0.5rem;
+  }
+  button {
+    width: 80%;
+  }
+}
+
+/* media query - 4 max width: 687px - TICKET CARDS */
+@media screen and (max-width: 687px) {
+  .ticket-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0.5rem;
+    margin: 5% 2% 0% 2%;
+  }
+
+  .experience-flexbox {
+    transform: translateY(-6vh);
+  }
+
+  .price {
+    font-size: var(--heading-3-font-size);
+  }
+
+  .ticket-benefit-icons {
+    width: 1rem;
+    height: 1rem;
+    aspect-ratio: 1/1;
+  }
+
+  button {
+    width: 70%;
+    height: 2rem;
+    padding: 0.3rem 0.3rem;
+    font-size: 0.8rem;
+    transform: translateY(-5vh);
+  }
+}
+
+/* media query - 5 max width: 606px* - TICKET CARDS*/
+@media screen and (max-width: 606px) {
+  section p {
+    font-size: 0.7rem;
+  }
+}
+
+/* media query - 6 max width: 579px* - TICKET CARDS*/
+@media screen and (max-width: 579px) {
+  .ticket-container {
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    margin-top: 0;
+  }
+
+  .price {
+    font-size: var(--heading-2-font-size);
+  }
+
+  .tickets-heading-3 {
+    font-size: var(--heading-2-font-size);
+  }
+
+  section p {
+    font-size: var(--body-1-font-size);
+  }
+
+  .ticket-benefit-icons {
+    display: inline;
+    vertical-align: middle;
+    padding: 2%;
+    width: 3rem;
+    height: 3rem;
+    aspect-ratio: 1/1;
+  }
+
+  .entry-flexbox {
+    grid-row: 2/3;
+    padding: 1%;
+  }
+  .experience-flexbox {
+    grid-row: 3/4;
+    padding: 1%;
+    transform: translateY(0vh);
+  }
+  .plus-flexbox {
+    grid-row: 4/5;
+    padding: 1%;
+  }
+
+  button {
+    grid-column: 1/2;
+    margin-top: 10%;
+    width: 50%;
+  }
+}
+
+/* media query - 7 max width: 442px* - TICKET CARDS*/
+@media screen and (max-width: 442px) {
+  .ticket-container {
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+  button {
+    width: 50%;
+  }
+}

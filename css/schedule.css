@@ -1,0 +1,105 @@
+@import url(main.css);
+
+main {
+  max-width: 1224px;
+  margin: 0 auto;
+}
+
+#events-title {
+  width: 100%;
+  text-align: center;
+  padding: 3.5rem 1rem 2rem;
+}
+
+#events-title h1 {
+  color: var(--primary-default-colour);
+  text-transform: none;
+}
+.event-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 3rem;
+  padding: 3.5rem 0;
+}
+.event-text {
+  justify-self: start;
+  text-align: left;
+  max-width: 30rem;
+}
+.event-text h2 {
+  color: var(--primary-default-colour);
+  margin-bottom: 1.5rem;
+}
+
+.event-text p {
+  margin-bottom: 0.35rem;
+}
+
+.event-image {
+  display: flex;
+  justify-content: flex-end;
+}
+.reverse .event-text {
+  justify-self: end;
+  text-align: right;
+}
+.reverse .event-image {
+  order: -1;
+  justify-content: flex-start;
+}
+
+.event-image img {
+  width: 100%;
+  max-width: 21rem;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+}
+
+@media screen and (max-width: 900px) {
+  .event-section {
+    grid-template-columns: 1fr;
+    align-items: start;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 2.5rem 0;
+  }
+  .event-text {
+    justify-self: center;
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  .event-text h2 {
+    margin-bottom: 1rem;
+  }
+  .event-image {
+    justify-content: center;
+  }
+  .event-image img {
+    max-width: 28rem;
+  }
+  .reverse .event-text {
+    text-align: center;
+    justify-self: center;
+  }
+  .reverse .event-image {
+    order: 0;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #event-title {
+    padding: 2rem 1rem;
+  }
+  .event-section {
+    padding: 2rem 0;
+    gap: 1.5rem;
+  }
+  .event-img {
+    max-width: 100%;
+  }
+}

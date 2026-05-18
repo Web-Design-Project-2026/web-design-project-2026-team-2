@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valborg</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/booking.css" />
+    <script src="js/addTicket.js" defer></script>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about-event">About Valborg</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="tickets-page.html">Tickets</a></li>
+        <li><a href="">SV</a></li>
+      </ul>
+    </nav>
+    
+    <main>
+      <section id="checkout-section">
+        <div id="checkout-left">
+          <h1>Checkout</h1>
+          <h2>Contact Information</h2>
+          <div class="row">
+            <div class="input-group">
+              <label for="contact-first-name">First name</label>
+              <input
+                id="contact-first-name"
+                type="text"
+                placeholder="e.g. John"
+              />
+            </div>
+            <div class="input-group">
+              <label for="contact-last-name">Last name</label>
+              <input
+                id="contact-last-name"
+                type="text"
+                placeholder="e.g. Smith"
+              />
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="contact-email">Email address</label>
+            <input
+              id="contact-email"
+              type="email"
+              placeholder="e.g. john@example.com"
+            />
+          </div>
+          <div class="input-group">
+            <label for="contact-phone">Phone number</label>
+            <input
+              id="contact-phone"
+              type="tel"
+              placeholder="e.g. +46 70 123 45 67"
+            />
+          </div>
+          <h2>Ticket Information</h2>
+          <div id="ticket-container">
+            <div class="row">
+              <div class="input-group">
+                <label for="ticket-first-name-1">First name</label>
+                <input
+                  id="ticket-first-name-1"
+                  type="text"
+                  placeholder="e.g. John"
+                />
+              </div>
+              <div class="input-group">
+                <label for="ticket-selector" class="sr-only">Ticket type</label>
+                <select id="ticket-selector">
+                  <option value="No Ticket" data-price="0kr">
+                    Ticket Type
+                  </option>
+                  <option value="Entry Ticket" data-price="100kr">
+                    Entry Ticket
+                  </option>
+                  <option value="Plus Ticket" data-price="150kr">
+                    Plus Ticket
+                  </option>
+                  <option value="Experience Ticket" data-price="200kr">
+                    Experience Ticket
+                  </option>
+                </select>
+              </div>
+              <button class="remove-ticket">
+                <img src="./icons/cancel.png" alt="Remove ticket" />
+              </button>
+            </div>
+          </div>
+          <button class="link-button" id="add-ticket">
+            Add another ticket
+          </button>
+        </div>
+        
+        <div id="checkout-right">
+          <img
+            src="./photos/checkout-photo.png"
+            alt="Valborg Celebration Cup"
+          />
+          <div id="summary-box">
+            <h2>Order summary</h2>
+            <div id="ticket-summary">
+              <div class="summary-row">
+                <p class="ticket-type">No Ticket</p>
+                <p class="ticket-price">0kr</p>
+              </div>
+            </div>
+            <div class="summary-row">
+              <p>Delivery - eTicket</p>
+              <p>0kr</p>
+            </div>
+            <div class="summary-row total">
+              <p>Total</p>
+              <p class="total-value">0kr</p>
+            </div>
+            <a href="confirmation-page.html" class="primary-button"
+              >GET YOUR TICKETS</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
